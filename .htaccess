@@ -1,0 +1,9 @@
+AddDefaultCharset utf-8
+Options All -ExecCGI -Indexes -Includes +FollowSymLinks
+
+php_value	magic_quotes_gpc	On
+
+RewriteEngine on
+RewriteRule api/add /api.php?mode=addData [QSA]
+
+
